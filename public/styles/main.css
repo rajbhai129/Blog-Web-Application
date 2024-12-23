@@ -1,0 +1,209 @@
+/* Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(145deg, #a4c3b2, #80a9ad); /* Soft Gradient Background */
+  color: #333;
+  line-height: 1.6;
+  animation: backgroundChange 15s infinite;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+/* Container Settings */
+.container {
+  width: 90%;
+  margin: 30px auto;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.9); /* Light Background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #990011;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Post List Styles */
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 28px;
+  color: #A47864; /* 2025 */
+}
+
+small {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Buttons */
+#newPostBtn, .edit, .delete {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+#newPostBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #e67709; /* New Color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold; /* Make it thick */
+  width: 150px; /* Decrease width */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+#newPostBtn:hover {
+  background-color: #ef8504; /* New Hover Color */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+#newPostBtn:hover, .edit:hover, .delete:hover {
+  background-color: #ec970e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.edit {
+  background-color: #2196F3; /* Blue */
+}
+
+.edit:hover {
+  background-color: #1e88e5;
+}
+
+.delete {
+  background-color: #f44336; /* Red */
+}
+
+.delete:hover {
+  background-color: #e53935;
+}
+
+.full-width {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 0;
+  background-color: #ff9800; /* New Color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold; /* Make it thick */
+  width: 150px; /* Decrease width */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.full-width:hover {
+  background-color: #fb8c00; /* New Hover Color */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background: linear-gradient(145deg, #2b1055, #7597de);
+  }
+  25% {
+    background: linear-gradient(145deg, #7597de, #2b1055);
+  }
+  50% {
+    background: linear-gradient(145deg, #2b1055, #7597de);
+  }
+  75% {
+    background: linear-gradient(145deg, #7597de, #2b1055);
+  }
+  100% {
+    background: linear-gradient(145deg, #2b1055, #7597de);
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
